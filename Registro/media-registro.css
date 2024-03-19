@@ -1,0 +1,18 @@
+@media (max-width: 475px) {
+    input.registro {
+        width: 300px;}
+        h2.registro {font-size: 50px;}
+        a i.volver {font-size: 20px;
+            top: 20px;
+        left: 20px;}
+    }
+
+    @media (max-width: 390px) {
+        input.registro {
+            width: 250px;}
+            ul.registro li { margin: 0px -10px;}
+            a i.volver {
+                top: 10px;
+            left: 10px;}
+            
+        }

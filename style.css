@@ -1,0 +1,820 @@
+html {
+    font-family: Libre Franklin;
+    color: aliceblue;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3px ;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+button {transition: 0.1s ease;}
+
+
+
+
+/* NAV */
+
+
+
+
+/* MENU RESPONSIVE  */
+
+
+
+
+nav label {display: none;}
+nav input {display: none;}
+
+.overlay {
+position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 50;
+    background:linear-gradient(rgba(175, 250, 255, 0.247),
+    rgba(105, 105, 105, 0.151));
+    backdrop-filter: blur(20px);
+opacity: 0;
+transition: 0.4s ease;}
+
+nav input:checked + .overlay {
+    opacity: 1;
+    transition: 0.4s ease;
+
+}
+
+
+
+nav input:checked ~ .nav {
+    height: 450px;
+    margin-bottom: -250px;
+    transition: 0.2s ease;
+}
+
+/* MENU RESPONSIVE */
+
+
+.nav {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    height: 120px;
+    border: 1px solid rgba(240, 248, 255, 0.808);
+    border-radius: 15px;
+    margin: 10px auto;
+    background: linear-gradient(rgba(54, 144, 247, 0.247),
+            rgba(105, 105, 105, 0.151));
+    backdrop-filter: blur(30px);
+    padding: 0px 20px;
+    transition: 0.3s ease;
+}
+
+div.caja-logo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    display: flex;
+    background-image: url(./imagenes/logo.jpg);
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.span-logo {
+    display: flex;
+    margin-top: 1px;
+}
+.li-botones {display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 80px;
+}
+a {
+    color: rgba(240, 248, 255, 0.856);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+
+    gap: 15px;
+    height: 50px;
+    padding-left: 120px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+li.navbar a {transition: 0.2s ease;}
+
+.caja-botones {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.nav-boton {
+    width: 100px;
+    height: 60px;
+    background: linear-gradient(rgba(112, 186, 255, 0.774), rgb(212, 0, 255));
+    border: 1px solid rgba(240, 248, 255, 0.822);
+    border-radius: 10px;
+    color: rgb(240, 248, 255);
+}
+
+
+
+/* NAV */
+
+
+
+
+
+
+
+
+
+/* HERO */
+.hero {
+    position: absolute;
+    top: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./imagenes/94278-web-design-wallpaper-top-free-web-design-background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    margin: -170px auto;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom: 1px solid aliceblue;
+}
+
+div.titulo-subtitulo {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+}
+.titulo-background {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(132, 189, 255, 0.247),
+    rgba(105, 105, 105, 0.151));
+backdrop-filter: blur(20px);
+padding: 40px;
+border-radius: 15px;
+border: 1px solid rgba(240, 248, 255, 0.699);
+z-index: 10;
+margin-bottom: 60px;
+}
+
+h1 {
+    position: relative;
+    display: flex;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 130px;
+    font-weight: 400;
+
+    z-index: 20;
+
+}
+
+.subtitulo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+span {
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.911);
+    margin-top: -30px
+
+}
+
+h2.subtitulo {
+    display: flex;
+    color: rgba(240, 248, 255, 0.952);
+    font-weight: 500;
+    font-size: 22px;
+}
+
+/* HERO */
+
+
+
+
+
+
+
+
+/* BOTON VOLVER */
+
+input.volver {position: absolute;
+    top: -30px;}
+    label.volver {
+        position: fixed;
+        bottom: 20px;
+        left: 48%;
+        z-index: 100;
+    }
+    input.volver:checked {scroll-behavior: 0%;}
+
+/* BOTON VOLVER */
+
+
+
+
+
+
+
+
+
+
+
+/* BENEFICIOS */
+
+
+div.beneficios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 720px;
+    margin-bottom: 370px;
+    width: 90vw;
+    height: 705px;
+    border-radius: 30px;
+    background: linear-gradient(rgb(0, 0, 0),
+            rgb(22, 22, 22),
+            rgb(70, 70, 70),
+            rgb(182, 182, 182));
+    border: 1px solid rgba(240, 248, 255, 0.575);
+    transform: scale(0.92);
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+h2.beneficios {
+    display: flex;
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    background: linear-gradient(to right,
+            rgba(112, 112, 112, 0.247),
+            rgb(255, 255, 255));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-image: url(./imagenes/cards.webp);
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    padding: 35px;
+    border: 1px solid rgba(240, 248, 255, 0.568);
+}
+
+.cards h3 {
+    display: flex;
+    font-weight: 300;
+    text-align: center;
+    color: rgba(240, 248, 255, 0.973);
+}
+
+i {
+    display: flex;
+    align-self: center;
+    font-size: 50px;
+    background: linear-gradient(rgb(0, 183, 255), rgb(212, 0, 255));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.cards p {
+    display: flex;
+    font-weight: 100;
+    text-align: center;
+    align-self: baseline;
+    color: rgba(240, 248, 255, 0.856);
+}
+
+.card-2 h3 {
+    margin-bottom: 30px;
+}
+
+.card-1 h3 {
+    margin-bottom: 10px;
+}
+
+/* BENEFICIOS */
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT US */
+
+div.container-about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 700px;
+    margin: -220px auto;
+    padding-left: 40px;
+    border: 1px solid aliceblue;
+    border-radius: 30px;
+    transform: scale(0.92);
+}
+
+
+h2.about-us {
+    display: flex;
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 240px;
+    margin-top: 190px;
+    background: linear-gradient(to right,
+            rgba(112, 112, 112, 0.247),
+            rgb(255, 255, 255));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+
+}
+
+.container-texto-imagen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 97vw;
+    height: 400px;
+    margin-top: -110px;
+    margin-bottom: 220px;
+    margin-right: 40px;
+}
+
+div.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 140px 0px 140px;
+}
+
+
+h3.about-us {
+    align-self: flex-start;
+    padding-bottom: 30px;
+    font-size: 80px;
+    font-weight: 400;
+    color: rgba(240, 248, 255, 0.87);
+}
+
+p.about-us {
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+    text-align: left;
+    font-weight: 100;
+    font-size: 16px;
+    font-style: oblique;
+}
+
+span.about-us {
+    display: flex;
+    align-self: flex-start;
+    font-weight: 800;
+    font-size: 15px;
+    font-style: oblique;
+    line-height: 30px;
+    color: rgb(0, 162, 255);
+    margin-top: 10px;
+}
+
+
+.imagen-about-us {
+    background-image: url(./imagenes/laptop-2022-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 720px;
+    min-width: 300px;
+    height: 250px;
+    margin-right: 160px;
+    border: 1px solid rgba(240, 248, 255, 0.404);
+    border-radius: 20px;
+    box-shadow: 8px 4px 20px rgb(212, 0, 255);
+}
+
+
+/* ABOUT US */
+
+
+
+
+
+
+
+/* TESTIMONIOS */
+
+.container-testimonios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 83%;
+    margin: 500px auto;
+    
+}
+
+h2.titulo-testimonios { display: flex;
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    background: linear-gradient(to right,
+            rgba(112, 112, 112, 0.247),
+            rgb(255, 255, 255));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+}
+
+
+div.container-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 110px auto -60px;
+    width: 90%;
+}
+
+
+div.card-testimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 0px;
+    width: 300px;
+    height: 250px;
+    background: linear-gradient(rgb(37, 37, 37), rgb(170, 170, 170));
+    border: 1px solid rgba(255, 255, 255, 0.664);
+    border-radius: 30px;
+}
+
+.info-testimonios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: -10px;
+    margin: 20px;
+}
+
+.foto-perfil-1 {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(./imagenes/testimonio\ 1.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.foto-perfil-2 {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(./imagenes/testimonio\ 2.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+.foto-perfil-3 {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(./imagenes/testimonio\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.foto-perfil-4 {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(./imagenes/testimonio\ 4.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.foto-perfil-5 {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(./imagenes/testimonio\ 5.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.texto-testimonio {
+    padding: 40px;
+    margin-top: 60px;
+}
+
+/* TESTIMONIOS */
+
+
+
+
+
+
+
+/* CONTACT US */
+
+div.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 280px auto;
+    width: 90vw;
+    height: 700px;
+    border-radius: 30px;
+    background: linear-gradient(rgb(0, 0, 0),
+            rgb(22, 22, 22),
+            rgb(70, 70, 70),
+            rgb(182, 182, 182));
+    border: 1px solid rgba(240, 248, 255, 0.575);
+    transform: scale(0.92);
+}
+
+h2.contacto {
+    display: flex;
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 70px;
+    margin-top: 40px;
+    background: linear-gradient(to right,
+            rgba(112, 112, 112, 0.247),
+            rgb(255, 255, 255));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+div.contacto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.email-password-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.mensaje-container {
+    align-self: center;
+}
+
+label.contacto {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.836);
+}
+
+.input-1,
+.input-2 {
+    display: flex;
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 15px;
+    border: none;
+    background: linear-gradient(rgb(0, 162, 255), rgb(162, 4, 224));
+    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+}
+
+.input-3 {
+    width: 400px;
+    height: 100px;
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    margin-top: 15px;
+    background:
+        linear-gradient(rgba(251, 253, 255, 0.856), rgba(199, 203, 207, 0.582));
+color: black
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.815);
+    font-weight: 500;
+}
+
+.input-3::placeholder {
+    color: rgba(0, 0, 0, 0.733);
+}
+
+button.contacto {
+    width: 200px;
+    height: 60px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 15px;
+    color: aliceblue;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(rgb(0, 183, 255), rgb(212, 0, 255));
+    backdrop-filter: blur(10px);
+}
+
+/* COMTACT US */
+
+
+
+
+
+/* FOOTER */
+
+h3.compañia {margin-bottom: -20px;
+padding: 0px;
+margin-bottom: -20px;
+}
+
+h3.siguenos {margin-left: -80px;}
+
+div.footer {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+    width: 100%;
+    height: 400px;
+    margin: -170px auto;
+    padding: 60px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.884);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(black,  rgb(105, 105, 105));
+}
+
+
+div.info-columnas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+
+
+
+div.compañia {
+    margin-top: -15px;}
+
+li.compañia {margin: auto;
+    text-align: center;}
+
+
+div.siguenos {
+    gap: 40px;
+    margin-top: -10px;
+
+    padding-right: 0px;
+
+
+}
+
+ul.siguenos-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+}
+
+ul.siguenos-footer li{
+background-color: rgb(255, 255, 255);
+padding: 10px;
+border-radius: 50px;}
+
+ul.siguenos-footer li i {font-size: 40px;}
+.service {margin-right: 40px;}
+
+ul.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 22px;
+    margin: 20px auto;
+
+}
+
+li.footer {
+    list-style: circle
+}
+
+
+/* FOOTER */

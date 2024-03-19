@@ -1,0 +1,99 @@
+/* TITULO */
+
+
+@keyframes arriba-abajo {
+    from {
+        transform: translateY(-200px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes abajo-arriba {
+    from {
+        transform: translateY(200px);
+    }
+
+    to {
+        transform: translate(0)
+    }
+}
+
+@keyframes izq-der {
+    from {
+        transform: translatex(-300px);
+    }
+
+    to {
+        transform: translatex(0);
+    }
+}
+
+
+
+
+
+h1 {
+    animation: arriba-abajo 1s ease-out, opacity 2s ease-out;
+
+}
+
+h2.subtitulo {
+    animation: izq-der 1s ease-out, opacity 2s ease-out;
+}
+
+
+
+span.titulo {
+    animation: abajo-arriba 1.5s ease-out, opacity 2s ease-out;
+}
+
+/* TITULO*/
+
+
+
+/* BOTONES */
+
+button:hover {cursor:pointer;
+transform: scale(1.1);
+transition: 0.1s ease;}
+button:active {filter: brightness(0.8);
+transition: 0.1s ;}
+label.volver:hover {cursor: pointer;filter: brightness(0.8);
+    transition: 0.1s }
+/* BOTONES */
+
+
+
+/* NAVBAR */
+div.nav {
+    animation: arriba-abajo 2s, opacity 2s ease-out;
+}
+
+li.navbar a:hover {color: rgb(255, 255, 255);
+font-size: 18px;
+transition: 0.2s ease;}
+
+/* NAVBAR */
+
+
+
+
+/* BOTON VOLVER */
+label.volver {
+    animation: abajo-arriba 1.5s ease-out, opacity 2s ease-out;
+}
+
+/* BOTON VOLVER */
