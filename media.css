@@ -346,9 +346,9 @@
     }
 
     .siguenos-footer {
-        margin: 20px auto;
+        margin: 20px;}
 
-    }
+        h3.siguenos {margin-left: 1px;}
 
 }
 
@@ -402,6 +402,8 @@
         height: 900px;
         margin-bottom: 0px;
     }
+
+    div.service {margin: 70px auto 0px ;}
 }
 
 @media (max-width:378px) {
@@ -432,7 +434,11 @@
         margin-left: -20px;
     }
 
+    div.nombre-testimonio p {font-size: 15px;
+        font-weight: 500;
+        margin-right: -50px;}
 
+        div.texto-testimonio p{font-size: 14px;}
 
     div.footer {
         height: 900px;
@@ -500,13 +506,6 @@
         width: 240px;
     }
 
-    .siguenos {
-        left: -30px;
-    }
-
-    h3.siguenos {
-        margin-left: 20px;
-    }
 
     ul.siguenos-footer li i {
         font-size: 40px;
