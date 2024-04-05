@@ -22,6 +22,10 @@
         flex-wrap: wrap;
         height: 500px;
     }
+
+    .siguenos {
+        margin-left: 46px
+    }
 }
 
 @media (max-width: 995px) {
@@ -39,6 +43,7 @@
     .nav ul {
         margin-left: -80px;
     }
+  
 
 }
 
@@ -61,6 +66,14 @@
     h3.about-us {
         font-size: 60px;
     }
+
+    div.beneficios {
+        height: 1500px
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 860px) {
@@ -70,13 +83,57 @@
     }
 }
 
+@media (max-width: 854px) {
+    .service {
+        margin-left: 40px;
+    }
+
+    .ayuda {
+        margin-right: 50px;
+    }
+
+}
+
+
 @media (max-width: 790px) {
     .nav button {
         width: 70px;
     }
 
     div.about-us {
-        margin-right: -60px
+        margin-right:20px;
+       
+    }
+
+    .container-texto-imagen {
+        flex-direction: column-reverse;
+    }
+
+    div.container-about-us {
+        height: 900px
+    }
+
+
+    h2.about-us {
+    
+        margin-top: 0px;
+        margin-bottom: 180px;
+    }
+
+    h3.about-us {
+        font-size: 50px;
+    }
+
+
+    div.imagen-about-us {
+        min-height: 300px;
+        width: 70%;
+        margin-left: 160px;;
+        margin-top: 200px;
+        margin-bottom: 100px;
+        margin-right: 200px ;
+
+        
     }
 }
 
@@ -85,6 +142,7 @@
 @media (min-width:790px) {
     .li-botones {
         gap: 30px;
+
     }
 
 }
@@ -103,6 +161,40 @@
         width: 70px;
     }
 }
+
+
+@media (max-width: 747px) {
+    div.footer {
+        height: 500px;
+    }
+
+    .service {
+        margin-left: 50px;
+        margin-right: -25px;
+    }
+}
+
+
+@media (max-width: 692px) {
+    div.footer {
+        height: 500px;
+        padding: 0px
+    }
+
+    .service {
+        margin-left: 40px;
+        margin-right: -25px;
+    }
+
+    .ayuda {
+        margin-left: -30px;
+    }
+
+    .info-columnas {
+        transform: scale(0.9);
+    }
+}
+
 
 @media (max-width: 672px) {
 
@@ -128,18 +220,7 @@
         font-size: 13px
     }
 
-    div.footer {
-        height: 700px;
-    }
-
-    div.service {
-        margin-left: -7px;
-    }
 }
-
-
-
-
 
 
 
@@ -254,50 +335,8 @@
         font-size: 55px;
     }
 
-    div.beneficios {
-        height: 1280px;
-    }
-
-    .cards-container {
-        margin-bottom: 170px;
-    }
-
     section.about-us {
         margin-top: -300px;
-    }
-
-
-
-    div.container-texto-imagen {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .imagen-about-us {
-        order: 1;
-        width: 70%;
-        height: 500px;
-        margin: -80px auto 10px;
-
-    }
-
-    div.about-us {
-        order: 2;
-        padding-left: 90px;
-        width: 90%;
-
-    }
-
-    h2.about-us {
-        margin-right: 30px;
-        font-size: 55px;
-    }
-
-    h3.about-us {
-        font-size: 60px;
-        margin: 0px;
-        padding: 30px 0px 20px 0px;
     }
 
 
@@ -324,15 +363,6 @@
         font-size: 55px;
     }
 
-    div.footer {
-        height: 700px;
-        gap: 0px;
-
-    }
-
-    div.info-columnas {
-        margin-top: 70px;
-    }
 
 
     .siguenos li {
@@ -345,12 +375,65 @@
         font-size: 10px;
     }
 
-    .siguenos-footer {
-        margin: 20px;}
 
-        h3.siguenos {margin-left: 1px;}
+
 
 }
+
+@media (max-width:562px) {
+    div.footer {
+        height: 500px;
+    }
+
+    .service {
+        margin-left: 50px;
+        margin-right: -50px
+    }
+
+    div.about-us {padding: 60px;
+    margin-top: -100px;}
+
+    .container-texto-imagen {margin-top: -70px;}
+}
+
+
+@media (max-width:547px) {
+    div.footer {
+        height: 900px;
+        flex-direction: column;
+    }
+
+    div.siguenos {
+        margin-right: -20px;
+    }
+
+    div.ayuda {margin-bottom: 0px;}
+
+    .info-columnas {
+        margin: auto;
+        margin-bottom: 30px
+    }
+
+    .compañia {
+        margin-bottom: -20px;
+        margin-top: 80px
+    }
+
+    h2.about-us {
+        font-size: 55px;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    h3.about-us {font-size: 40px;}
+
+
+
+    .container-texto-imagen{margin-top: 0px;}
+  
+
+}
+
 
 @media (max-width:520px) {
     input.contacto {
@@ -362,48 +445,32 @@
         min-height: 200px;
     }
 
-    h3.about-us {
-        font-size: 50px;
+   
+
+    div.container-testimonios {
+        margin-top: 0px;
+        margin-bottom: 300px;
     }
 
-    div.container-testimonios {margin-top: 0px;
-        margin-bottom: 300px;}
-
     h2.titulo-testimonios {
-    
+
         margin: 400px 0px 0px 0px
     }
 
-    div.footer {margin-bottom: 0px;
-    height: 700px;}
+
 }
 
 
-@media (max-width: 500px) {
 
-    div.container-about-us {
-        height: 800px;
-        gap: 50px;
-    }
-
-    div.about-us {
-        padding: 20px;
-        margin: auto;}
-    }
-
-    
 @media (max-width:445px) {
 
     label.volver {
         left: 41%;
     }
 
-    div.footer {
-        height: 900px;
-        margin-bottom: 0px;
-    }
+    div.container-texto-imagen {margin-bottom: 250px;}
 
-    div.service {margin: 70px auto 0px ;}
+
 }
 
 @media (max-width:378px) {
@@ -416,17 +483,9 @@
         height: 900px;
     }
 
-    h2.about-us {
-        margin-top: 170px;
-        margin-bottom: 0px;
-    }
-
-    .container-texto-imagen {
-        margin-top: 200px;
-    }
+   
 
     div.about-us {
-        width: 100%;
         padding: 50px;
     }
 
@@ -434,11 +493,15 @@
         margin-left: -20px;
     }
 
-    div.nombre-testimonio p {font-size: 15px;
+    div.nombre-testimonio p {
+        font-size: 15px;
         font-weight: 500;
-        margin-right: -50px;}
+        margin-right: -50px;
+    }
 
-        div.texto-testimonio p{font-size: 14px;}
+    div.texto-testimonio p {
+        font-size: 14px;
+    }
 
     div.footer {
         height: 900px;
@@ -456,42 +519,13 @@
 
 
     label.volver {
-        left: 38%;
+        left: 41%;
     }
 
     h2.beneficios {
         font-size: 45px;
     }
 
-    div.about-us {
-        height: 300px;
-        padding: 150px 50px 0px;
-    }
-
-    h2.about-us {
-        font-size: 45px;
-    }
-
-    div.imagen-about-us {
-        width: 230px;
-        height: 180px;
-        margin: -90px;
-
-    }
-
-    h2.about-us {
-        margin-top: 120px;
-    }
-
-    h3.about-us {
-        font-size: 40px;
-        margin-top: 0px;
-        padding: 30px 0px 20px 0px;
-    }
-
-    .container-texto-imagen {
-        gap: 40px;
-    }
 
     h2.titulo-testimonios {
         font-size: 45px;
@@ -510,5 +544,4 @@
     ul.siguenos-footer li i {
         font-size: 40px;
     }
-
 }
